@@ -26,11 +26,11 @@ sp_chars = re.compile('[@_!#$%^&*()<>?/|}{~:\']')
 sp_and = re.compile('[&]')
 
 
-org_file = "C:\\Users\\Daraz\\Desktop\\transfeb\\zahid\\part3_5500.csv"
-trans_file = "C:\\Users\Daraz\Desktop\\transfeb\\zahid\\\part3_5500-trans.csv"
-new_file = "C:\\Users\Daraz\\Desktop\\transfeb\\zahid\\part3_5500-new.csv"
-perfect_file = "C:\\Users\\Daraz\\Desktop\\transfeb\\zahid\\part3_5500-perf.csv"
-imperfect_file = "C:\\Users\Daraz\\Desktop\\transfeb\\zahid\\part3_5500-notFound.csv"
+org_file = "E:\\Transliteration\\Data\\e\\e.csv"
+trans_file = "E:\\Transliteration\\Data\\e\\Brand-e-trans_file.csv"
+new_file = "E:\\Transliteration\\Data\\e\\Brand-e-new.csv"
+perfect_file = "E:\\Transliteration\\Data\\e\\Brand-d-perf.csv"
+imperfect_file = "E:\\Transliteration\\Data\\e\\Brand-d-im.csv"
 
 df = pd.read_csv(org_file, encoding="ISO-8859-1")
 df.columns = ['Original_Word']
@@ -122,7 +122,12 @@ for sentence in df['Original_Word']:
                         not_found_org.append(org_word)
                         not_found_mod.append(word)
                         not_found_trans.append(avro.parse(word))
-                        not_found_cat.append('TL-NW-ALNUM')
+                        if re.match('^[0-9]*$', org_word):
+                            not_found_cat.append('TL-NW-NUM-Only')
+                        elif re.match('^[a-zA-Z0-9]*$', org_word):
+                            not_found_cat.append('TL-NW-ALNUM')
+                        else:
+                            not_found_cat.append('TL-NW-ALNUM-SP')
                     elif sp_chars.search(word) is not None:
                         # print('TL-NW-SPCHAR')
                         ctl_spc += 1

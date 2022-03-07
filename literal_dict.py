@@ -731,10 +731,71 @@ modific= {
 	'ti':'Ti',
 	'ty':'Ti',
 	'yu':'iu',
-	'':'',
+	'ar': 'yar',
+	'ca':'ke',
+	'ce':'se',
+	'ci':'sai',
+	'co':'Ko',
+	'cu':'KiU',
+	'cy':'si',
+	'da':'Da',
+	'de':'DI',
+	'di':'Dai',
+	'do':'DO',
+	'du':'DiU',
+	'dy':'Dai',
 	'':'',
 	'':'',
 	'':'',
 	'':'',
 	'':''
 }
+#
+# Fa   Fe   Fi   Fo   Fu   Fy
+# ফে   ফী   ফাই  ফো  ফিউ  ফাই
+#
+# Ga  Ge  Gi   Go  Gu  Gy
+# জে   জী   জাই  গো   গিউ  জাই
+#
+# Ha   He   Hi   Ho   Hu   Hy
+# হে   হী   হাই  হো   হিউ  হাই
+#
+# Ja   je   ji    jo   ju   jy
+# জে   জী   জাই  জো   জিউ  জাই
+#
+# Ka   Ke   Ki   Ko   Ku   Ky
+# কে   কী   কাই  কো  কিউ  কাই
+#
+# la   le   li    lo   lu   ly
+# লে   লী   লাই  লো   লিউ  লাই
+#
+# ma  me  mi   mo  mu  my
+# মে   মী   মাই  মো   মিউ  মাই
+#
+# na   ne   ni   no   nu   ny
+# নে   নী   নাই  নো   নিউ  নাই
+#
+# pa   pe   pi   po   pu   py
+# পে   পী   পাই  পো   পিউ  পাই
+#
+# ra   re   ri    ro   ru   ry
+# রে   রী   রাই  রো   রিউ  রাই
+#
+# sa   se   si   so   su   sy
+# সে   সী   সাই  সো   সিউ  সাই
+#
+# ta   te   ti    to   tu   ty
+# টে   টী   টাই  টু    টিউ  টাই
+#
+# va   ve   vi   vo   vu   vy
+# ভে   ভী   ভাই  ভো   ভিউ  ভাই
+#
+# wa   we   wi   wo   wu   wy
+# ওয়ে  উই   ওয়াই উও  উষা  ওয়াই
+#
+# ya   ye   yi   yo   yu   yy
+# য়ে   য়ী   য়াই  য়িও  ইউ   _
+#
+# za   ze   zi   zo   zu   zy
+#
+# জে   জী   জাই  জো   জিউ  জাই
