@@ -109,23 +109,19 @@ for sentence in df['Original_Word']:
                         ctl_num += 1
                         translated_sentence = translated_sentence + avro.parse(word) + " "
                     elif word.isalnum():
-                        # place phonetic modification
-                        # print('TL-NW-ALNUM')
                         ctl_nw += 1
                         org_word=word
                         for key in modific:
                             if key in word.lower():
-                                # print(key, "->", modific[key])
                                 word = word.replace(key, modific[key])
                         #replace T
-                        translated_sentence = translated_sentence + avro.parse(word) + " "
+                        # translated_sentence = translated_sentence + avro.parse(word) + " "
+                        translated_sentence = translated_sentence + org_word + " "
                         not_found_org.append(org_word)
                         not_found_mod.append(word)
                         not_found_trans.append(avro.parse(word))
                         if re.match('^[0-9]*$', org_word):
                             not_found_cat.append('TL-NW-NUM-Only')
-                        elif re.match('^[a-zA-Z]*$', org_word):
-                            not_found_cat.append('TL-NW-AL-Only')
                         elif re.match('^[a-zA-Z0-9]*$', org_word):
                             not_found_cat.append('TL-NW-ALNUM')
                         else:
@@ -136,6 +132,7 @@ for sentence in df['Original_Word']:
                         raw_word = re.sub('[^A-Za-z0-9]+', '', word)
                         # print(word)
                         # print(raw_word)
+                        transliteration = trans_bng.get(raw_word.lower(), '909')
                         transliteration = trans_bng.get(raw_word.lower(), '909')
                         if transliteration != '909':
                             # print('TL-BN')
