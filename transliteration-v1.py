@@ -26,11 +26,11 @@ sp_chars = re.compile('[@_!#$%^&*()<>?/|}{~:\']')
 sp_and = re.compile('[&]')
 
 
-org_file = "E:\\Transliteration\\Data\\e\\e.csv"
-trans_file = "E:\\Transliteration\\Data\\e\\Brand-e-trans_file.csv"
-new_file = "E:\\Transliteration\\Data\\e\\Brand-e-new.csv"
-perfect_file = "E:\\Transliteration\\Data\\e\\Brand-d-perf.csv"
-imperfect_file = "E:\\Transliteration\\Data\\e\\Brand-d-im.csv"
+org_file = "E:\\Transliteration\\Data\\g\\g.csv"
+trans_file = "E:\\Transliteration\\Data\\g\\Brand-g-trans_file.csv"
+new_file = "E:\\Transliteration\\Data\\g\\Brand-g-new.csv"
+perfect_file = "E:\\Transliteration\\Data\\g\\Brand-g-perf.csv"
+imperfect_file = "E:\\Transliteration\\Data\\g\\Brand-g-im.csv"
 
 df = pd.read_csv(org_file, encoding="ISO-8859-1")
 df.columns = ['Original_Word']
