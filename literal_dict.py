@@ -50,6 +50,12 @@ literal = {
 	'*':'*'
 }
 modific= {
+	'sive': 'siv',
+	'ber': 'bar',
+	'air': 'eyar',
+	'ries': 'rij',
+	'acci': 'exi',
+	'account':'eKaunT',
 	'aalaadinkids':'aalaadin`kiDs',
 	'aaladinkids':'aaladin`kiDs',
 	'absolutely':'aZbsoluT`li',
@@ -731,7 +737,6 @@ modific= {
 	'ti':'Ti',
 	'ty':'Ti',
 	'yu':'iu',
-	'ar': 'yar',
 	'ca':'ke',
 	'ce':'se',
 	'ci':'sai',
@@ -744,6 +749,12 @@ modific= {
 	'do':'DO',
 	'du':'DiU',
 	'dy':'Dai',
+	'':'',
+	'':'',
+	'':'',
+	'':'',
+	'':'',
+	'':'',
 	'':'',
 	'':'',
 	'':'',
